@@ -18,6 +18,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdqhuy/aishop_nodejs.git"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
