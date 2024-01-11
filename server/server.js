@@ -1,8 +1,22 @@
 const express = require('express')
 const app = express()
+const port = 3001
+const cors = require('cors')
 
-app.get("/api", (req, res) => {
-    res.json({"users": ["userOne", "userTwo", "userThree"]})
-})
+app.use(express.json())
+app.use(cors())
+app.use(express.static('../client/public'));
 
-app.listen(5000, () => {console.log("Server start on port 5000")})
+// HTTP Logger
+const morgan = require('morgan')
+app.use(morgan('combined'))
+
+//Routers
+const postRouter = require('./src/routes/Posts.route')
+app.use("/posts", postRouter)
+
+const db = require("./src/models")
+
+db.sequelize.sync().then(() => {
+    app.listen(port, () => {console.log(`Server start on port ${port}`)});
+});
