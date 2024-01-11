@@ -11,7 +11,7 @@ app.use(express.static('../client/public'));
 const morgan = require('morgan')
 app.use(morgan('combined'))
 
-//Routers
+//Routes Init
 const route = require('./src/routes/index.route')
 route(app)
 

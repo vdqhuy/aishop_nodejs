@@ -1,16 +1,13 @@
-const express = require('express')
-const router = express.Router()
-const { Posts } = require('../models')
+const express = require('express');
+const router = express.Router();
+const postController = require('../app/controllers/posts.controller');
 
-router.get('/', async (req, res) => {
-    const listOfPosts = await Posts.findAll()
-    res.json(listOfPosts);
-});
+router.get('/detail', postController.getSlug);
 
-router.post('/', async (req, res) => {
-    const post = req.body;
-    await Posts.create(post)
-    res.json(post);
-});
+router.get('/', postController.getListOfPosts);
 
-module.exports = router
+router.post('/', postController.submitPost);
+
+
+
+module.exports = router;

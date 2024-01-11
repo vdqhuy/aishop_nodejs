@@ -1,5 +1,6 @@
+const postRouter = require('./posts.route');
+
 function route(app) {
-    const postRouter = require('./posts.route');
     app.use("/posts", postRouter)
 }
 
