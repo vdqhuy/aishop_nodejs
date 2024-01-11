@@ -12,8 +12,8 @@ const morgan = require('morgan')
 app.use(morgan('combined'))
 
 //Routers
-const postRouter = require('./src/routes/Posts.route')
-app.use("/posts", postRouter)
+const route = require('./src/routes/index.route')
+route(app)
 
 const db = require("./src/models")
 
