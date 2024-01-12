@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone, faLocationDot} from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 // Import site: https://fontawesome.com/docs/apis/javascript/import-icons
 import './Footer.css';
 
@@ -104,8 +105,8 @@ function CopyrightYear() {
 function CopyrightAuthor() {
     return (
         <div className='copyright__author'>
-            <a href='https://www.facebook.com/huy.voquoc.507/' target="_blank" rel="noopener noreferrer">
-                 Võ Đặng Quốc Huy
+            <a href='https://github.com/vdqhuy/aishop_nodejs' target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} /> Võ Đặng Quốc Huy
             </a>
         </div>
     )

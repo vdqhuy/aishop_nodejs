@@ -148,3 +148,7 @@
     text-decoration: none;
     color: #bebe64;
 }
+
+.copyright__author a:hover {
+    color: #59ab6e;
+}
