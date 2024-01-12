@@ -1,0 +1,150 @@
+.Footer {
+    color: var(--white-color);
+}
+
+
+.footer__main-footer {
+    background-color: #212529;
+    padding-top: 48px;
+    padding-bottom: 30px;
+}
+
+.footer__main-footer .grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__main-footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer__main-footer ul li {
+    font-size: 1.6rem;
+    line-height: 2.4rem;;
+    padding-top: 10px;
+}
+
+.footer__main-footer h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 15px;
+    margin-bottom: 12px;
+}
+
+.main-footer__contact,
+.main-footer__category,
+.main-footer__navigation {
+    padding: 0 15px;
+}
+
+.main-footer__contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+}
+
+.main-footer__contact h1 {
+    color: #59ab6e;
+}
+
+.contact__detail-info {
+
+}
+
+.detail-info__address {
+
+}
+
+.detail-info__phone {
+
+}
+
+.detail-info__email {
+
+}
+
+
+.main-footer__category a, .main-footer__navigation a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.main-footer__category a:hover, .main-footer__navigation a:hover {
+    color: #59ab6e;
+}
+
+.main-footer__category {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main-footer__category h1 {
+    
+}
+
+.category__cate-name {
+
+}
+
+.cate-name__link {
+
+}
+
+.main-footer__navigation {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.navigation__list-nav {
+
+}
+
+.navigation__list-nav li a {
+    color: #bebe64;
+}
+
+.list-nav__home {
+
+}
+
+.list-nav__about {
+
+}
+
+.list-nav__location {
+
+}
+
+.list-nav__contact {
+
+}
+
+
+.footer__copyright {
+    background-color: #1e1b1b;
+    font-size: 1.6rem;
+    padding: 15px 0;
+}
+
+.footer__copyright .grid {
+    display: flex;
+}
+
+.copyright__web-info {
+    padding-right: 5px;
+}
+
+.copyright__author {
+    padding-left: 5px;
+}
+
+.copyright__author a {
+    text-decoration: none;
+    color: #bebe64;
+}

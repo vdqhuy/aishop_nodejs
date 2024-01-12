@@ -1,40 +1,135 @@
-.header {
-
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
-.header--nav {
-    background-color: #212529;
+.Header svg {
+    margin: 0 8px;
+}
+
+.Header a {
+    text-decoration: none;
+}
+
+.Header a:hover {
+    color: #3eb8d0;
+}
+
+.header__nav {
     color: #fff;
 }
 
-.nav--contact {
+/* .margin-center {
 
+} */
+
+.nav__contact {
+    height: 37px;
+    background-color: #212529;
+    font-size: 1.2rem;
+    line-height: 2.16rem;
+    padding: 8px 0;
 }
 
-.contact--info {
-
+.nav__contact .grid {
+    display: flex;
+    justify-content: space-between;
 }
 
-.info--email {
-
+.nav__contact .info__email:hover,
+.nav__contact .info__phone:hover {
+    color: #3eb8d0;
 }
 
-.info--phone {
-
+.contact__info {
+    display: flex;
 }
 
-.contact--social {
+/* .info__email {
 
+} */
+
+/* .info__phone {
+
+} */
+
+.contact__social {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    font-size: 1.6rem;
 }
 
-.social--auth {
-
+.contact__social a {
+    color: var(--white-color);
 }
 
-.social--media {
-
+.social__auth {
+    margin-right: 32px;
 }
 
-.nav--navigation {
+/* .social__media {
 
+} */
+
+.nav__navigation {
+    background-color:   var(--white-color);
 }
+
+.nav__navigation .grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav__navigation a {
+    color: var(--text-color);
+}
+
+.navigation__logo {
+    font-size: 3rem;
+    
+}
+
+.navigation__logo a {
+    color: #59ab6e;
+}
+
+.navigation__main-nav {
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin: 0 160px;
+}
+
+.main-nav__list {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* .main-nav__item {
+
+} */
+
+/* .navigation__sub-nav {
+
+} */
+
+.sub-nav__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.6rem;
+}
+
+/* .sub-nav__item {
+
+} */
