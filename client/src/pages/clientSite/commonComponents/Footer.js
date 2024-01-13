@@ -31,7 +31,7 @@ function MainFooterContact() {
 function MainFooterCategory() {
     return (
         <div className='main-footer__category'>
-            <h1>PRODUCT</h1>
+            <h1>PRODUCTS</h1>
             <ul className='category__cate-name'>
                 <li className='cate-name__link'>
                     <a href='http://localhost:3000/'>Cleanser</a>
@@ -53,7 +53,7 @@ function MainFooterCategory() {
 function MainFooterNavigation() {
     return (
         <div className='main-footer__navigation'>
-            <h1>INFOMATIONS</h1>
+            <h1>INFOMATION</h1>
             <ul className='navigation__list-nav'>
                 <li className='list-nav__home'>
                     <a href='http://localhost:3000/'>

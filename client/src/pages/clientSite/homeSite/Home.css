@@ -2,18 +2,73 @@
     margin-top: 100px;
 }
 
+/* Home Slider Style */
 .Home .home__slider {
-    height: 500px;
+    
 }
 
 .swiper {
     width: 100%;
     height: 100%;
 }
+
+.slide {
+    color: red;
+}
+
+.swiper__slide {
+    display: flex;
+    justify-content: center;
+}
+
+.slide__text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 50%;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.slide__text h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    color: #59ab6e;
+    margin: 0 0 10px 0;
+}
+
+.slide__text h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.slide__text p {
+    margin: 0 0 10px 0;
+}
+
+.slide__img {
+    margin-right: 50px;
+    padding: 100px;
+    padding-right: 0;
+    /* background-color: #212529; */
+}
+
+.slide__img img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 12px;
+}
+
+.slider__swiper .swiper-wrapper .swiper-slide {
+    background-color: #eee;
+}
   
-.mySwiper .swiper-slide {
-    text-align: center;
-    font-size: 18px;
+.slider__swiper .swiper-slide {
+    font-size: 1.6rem;
     background: #fff;
   
     /* Center slide text vertically */
@@ -21,15 +76,178 @@
     justify-content: center;
     align-items: center;
 }
-  
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+.slider__swiper .swiper-button-next,
+.slider__swiper .swiper-button-prev {
+    color: #59ab6e;
 }
 
-.mySwiper .swiper-button-next,
-.mySwiper .swiper-button-prev {
-    color: #59ab6e;
+.slider__swiper .swiper-button-next {
+    right: 4%;
+}
+
+.slider__swiper .swiper-button-prev {
+    left: 4%;
+}
+/* Home Slider Style */
+
+/* Home Brand Style */
+.home_brand {
+
+}
+
+.home_brand .grid {
+    padding: 48px 0;
+}
+
+.brand__header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    color: #2c3e50;
+}
+
+.brand__header h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    margin: 0;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.brand__header p {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.brand__shop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop__cate {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 48px 0;
+}
+
+.shop__cate img {
+    height: 300px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+    border: 1px solid #dee2e6;
+    margin-bottom: 16px;
+}
+
+.shop-cate__title {
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: 3.45rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shop-cate__btn-link {
+    text-align: center;
+}
+
+.shop-cate__btn-link button {
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    background-color: #3d9352;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    color: var(--white-color)
+}
+
+.shop-cate__btn-link button:hover {
+    cursor: pointer;
+    background-color: #59ab6e;
+}
+/* Home Brand Style */
+
+/* Home Best Sales Style */
+.home__best-sales {
+    background-color: #e9eef5;
+}
+
+.home__best-sales .grid {
+    padding: 48px 0;
+}
+
+.best-sales__header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    color: #2c3e50;
+}
+
+.best-sales__header h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    margin: 0;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.best-sales__header p {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.best-sales__products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 32px 32px;
+    margin: 0 16px;
+    background-color: var(--white-color);
+    border-radius: 1.2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.products__card img {
+    display: block;
+    height: 300px;
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 16px;
+}
+
+.card__title {
+    margin: 0 0 10px 0;
+    font-size: 2.1rem;
+    line-height: 3.15rem;
+}
+
+.card__description {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.card_review {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #919aa3;
 }

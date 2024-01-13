@@ -73,10 +73,10 @@ function NavigationMainNav() {
         <div className='navigation__main-nav'>
             <ul className='main-nav__list'>
                 <li className='main-nav__item'>
-                    <a href='http://localhost:3000/'>HOME</a>
+                    <a href='http://localhost:3000/client/home'>HOME</a>
                 </li>
                 <li className='main-nav__item'>
-                    <a href='http://localhost:3000/'>ABOUT</a>
+                    <a href='http://localhost:3000/client/about'>ABOUT</a>
                 </li>
                 <li className='main-nav__item'>
                     <a href='http://localhost:3000/'>SHOP</a>
